@@ -7,7 +7,7 @@ namespace FormsControls.Droid
     {
         internal static IXPage GetXPage(this Page page)
         {
-            return new XPage(Forms.Context,page);
+            return new XPage(Main.Context,page);
         }
     }
 }
