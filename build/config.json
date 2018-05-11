@@ -1,0 +1,23 @@
+{
+	"productName" : "XForms.Plugin.AnimationNavigationPage",
+	"projectName" : "XForms.Plugin.AnimationNavigationPage",
+	"githubOwner": "AlexandrNikulin",
+	"githubRepository": "AnimationNavigationPage",
+	"packageWhiteList": ["XForms.Plugin.AnimationNavigationPage"],
+	"solutionFile" : "../src/FormsControls.sln",
+	"tags": [ "Animation", "Xamarin forms"],
+	"authors" : ["Alexandr Nikulin"],
+	"copyright" : "Alexandr Nikulin",
+	"iconUrl": "https://github.com/AlexandrNikulin/AnimationNavigationPage/blob/master/Assets/icon.png",
+	"testProjectPath": "",
+	"runUnitTests" : false,
+	"runSimulatorTests" : false,
+	"iosTestAppDirectoryPath" : "",
+	"iosTestAppPath": "",
+	"androidTestAppPath":"",
+	"nuspecRootPath" : "../src/",
+	"testAppBundleId": "",
+	"simulatorRuntimes": [],
+	"simulatorDevice" : "",
+	"artifactDirectory" : "../build/artifacts/"
+}

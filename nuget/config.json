@@ -1,7 +1,0 @@
-{
-	"productName" : "AnimationNavigationPage",
-	"projectName" : "AnimationNavigationPage",
-	"packageWhiteList": ["AnimationNavigationPage"],
-	"solutionFile" : "../SourceCode/Lib/FormsControls.sln",
-	"nuspecRootPath" : "../"
-}
