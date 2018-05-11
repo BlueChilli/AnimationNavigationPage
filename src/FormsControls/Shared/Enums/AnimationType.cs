@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FormsControls.Base
+namespace FormsControls
 {
     public enum AnimationType
     {

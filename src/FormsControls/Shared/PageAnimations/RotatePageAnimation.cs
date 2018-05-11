@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace FormsControls.Base
+namespace FormsControls
 {
     public class RotatePageAnimation : PageAnimation
     {

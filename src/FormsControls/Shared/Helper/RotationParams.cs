@@ -1,4 +1,4 @@
-﻿namespace FormsControls.Base
+﻿namespace FormsControls
 {
     public struct RotationParams
     {

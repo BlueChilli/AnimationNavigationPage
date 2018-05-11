@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Views.Animations;
+using System;
 using Xamarin.Forms.Platform.Android;
 
 namespace Sample.Droid
@@ -17,6 +19,7 @@ namespace Sample.Droid
             FormsControls.Droid.Main.Init(this);
             App.Limitations = this is FormsAppCompatActivity;
             LoadApplication(new App());
+
         }
     }
 }

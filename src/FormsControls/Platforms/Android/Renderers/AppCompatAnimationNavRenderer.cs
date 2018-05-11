@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Android.Content;
-using FormsControls.Base;
+using Android.Support.V4.Content;
+using Android.Views.Animations;
+using FormsControls;
 using FormsControls.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -203,6 +205,7 @@ namespace FormsControls.Droid
             return tcs.Task;
         }
 
+      
         private async void RemoveFragments(List<Fragment> fragmentsToRemove)
         {
             await Task.Delay(Context.Resources.GetInteger(Resource.Integer.animation_duration)).ConfigureAwait(true);

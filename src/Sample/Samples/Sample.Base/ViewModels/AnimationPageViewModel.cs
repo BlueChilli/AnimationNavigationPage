@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Input;
-using FormsControls.Base;
+using FormsControls;
 using Xamarin.Forms;
 
 namespace Sample

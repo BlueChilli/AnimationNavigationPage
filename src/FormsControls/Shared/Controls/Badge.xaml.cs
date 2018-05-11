@@ -4,7 +4,7 @@ using System.Windows.Input;
 using FormsControls.Extensions;
 using Xamarin.Forms;
 
-namespace FormsControls.Base
+namespace FormsControls
 {
     public partial class Badge
     {

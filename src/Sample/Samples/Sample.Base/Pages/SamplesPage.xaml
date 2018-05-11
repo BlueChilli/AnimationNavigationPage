@@ -4,7 +4,7 @@
     x:Class="Sample.SamplesPage"
     xmlns:local="clr-namespace:Sample;assembly=Sample"
     xmlns:behaviors="clr-namespace:Sample.Behaviors;assembly=Sample"
-    xmlns:controls="clr-namespace:FormsControls.Base;assembly=FormsControls.Base"
+    xmlns:controls="clr-namespace:FormsControls;assembly=FormsControls"
     NavigationPage.BackButtonTitle="Back"
     BackgroundColor="{StaticResource MainBackgroundColor}"
     Title="{Binding PageTitle}">

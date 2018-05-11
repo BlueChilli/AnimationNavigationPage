@@ -1,5 +1,5 @@
 ﻿using Android.Support.V4.App;
-using FormsControls.Base;
+using FormsControls;
 using Xamarin.Forms;
 
 namespace FormsControls.Droid

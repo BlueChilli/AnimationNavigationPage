@@ -1,6 +1,6 @@
 ﻿using Android.Content;
 using Android.Util;
-using FormsControls.Base;
+using FormsControls;
 using FormsControls.Droid;
 using Xamarin.Forms;
 

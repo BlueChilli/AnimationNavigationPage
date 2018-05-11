@@ -1,7 +1,7 @@
 ﻿using System;
 using Android.Graphics;
 using Android.Widget;
-using FormsControls.Base;
+using FormsControls;
 using FormsControls.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;

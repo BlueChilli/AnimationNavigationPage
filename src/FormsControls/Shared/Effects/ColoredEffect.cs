@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Xamarin.Forms;
 
-namespace FormsControls.Base
+namespace FormsControls
 {
     public static class ColoredEffect
     {

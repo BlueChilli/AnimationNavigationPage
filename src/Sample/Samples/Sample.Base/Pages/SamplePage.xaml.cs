@@ -1,5 +1,5 @@
 ﻿using System;
-using FormsControls.Base;
+using FormsControls;
 
 namespace Sample
 {

@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Android.Content;
 using Android.Views;
-using FormsControls.Base;
+using FormsControls;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 

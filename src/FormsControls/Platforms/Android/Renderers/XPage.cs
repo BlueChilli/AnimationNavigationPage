@@ -4,7 +4,7 @@ using System.Linq;
 using Android.Content;
 using Android.Views;
 using Android.Views.Animations;
-using FormsControls.Base;
+using FormsControls;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace FormsControls.Base
+namespace FormsControls
 {
     public class RollPageAnimation : PageAnimation
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using Android.Content;
-using FormsControls.Base;
+using FormsControls;
 using Xamarin.Forms.Platform.Android;
 
 namespace FormsControls.Droid

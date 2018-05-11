@@ -1,5 +1,5 @@
 ﻿using System;
-using FormsControls.Base;
+using FormsControls;
 
 namespace FormsControls.Droid
 {
@@ -40,24 +40,24 @@ namespace FormsControls.Droid
             {
                 case AnimationSubtype.FromRight:
                     if (animation.BounceEffect && isPush)
-                        return AnimationsId.Create(Resource.Animator.enter_from_right_long_bounce, Resource.Animator.exit_to_left_long_bounce);
-                    return isPush ? AnimationsId.Create(Resource.Animator.enter_from_right_long, Resource.Animator.exit_to_left_long) :
-                                    AnimationsId.Create(Resource.Animator.enter_from_left_long, Resource.Animator.exit_to_right_long);
+                        return AnimationsId.Create(Resource.Animation.enter_from_right_long_bounce, Resource.Animation.exit_to_left_long_bounce);
+                    return isPush ? AnimationsId.Create(Resource.Animation.enter_from_right_long, Resource.Animation.exit_to_left_long) :
+                                    AnimationsId.Create(Resource.Animation.enter_from_left_long, Resource.Animation.exit_to_right_long);
                 case AnimationSubtype.FromTop:
                     if (animation.BounceEffect && isPush)
-                        return AnimationsId.Create(Resource.Animator.enter_from_top_long_bounce, Resource.Animator.exit_to_bottom_long_bounce);
-                    return isPush ? AnimationsId.Create(Resource.Animator.enter_from_top_long, Resource.Animator.exit_to_bottom_long) :
-                                    AnimationsId.Create(Resource.Animator.enter_from_bottom_long, Resource.Animator.exit_to_top_long);
+                        return AnimationsId.Create(Resource.Animation.enter_from_top_long_bounce, Resource.Animation.exit_to_bottom_long_bounce);
+                    return isPush ? AnimationsId.Create(Resource.Animation.enter_from_top_long, Resource.Animation.exit_to_bottom_long) :
+                                    AnimationsId.Create(Resource.Animation.enter_from_bottom_long, Resource.Animation.exit_to_top_long);
                 case AnimationSubtype.FromBottom:
                     if (animation.BounceEffect && isPush)
-                        return AnimationsId.Create(Resource.Animator.enter_from_bottom_long_bounce, Resource.Animator.exit_to_top_long_bounce);
-                    return isPush ? AnimationsId.Create(Resource.Animator.enter_from_bottom_long, Resource.Animator.exit_to_top_long) :
-                                    AnimationsId.Create(Resource.Animator.enter_from_top_long, Resource.Animator.exit_to_bottom_long);
+                        return AnimationsId.Create(Resource.Animation.enter_from_bottom_long_bounce, Resource.Animation.exit_to_top_long_bounce);
+                    return isPush ? AnimationsId.Create(Resource.Animation.enter_from_bottom_long, Resource.Animation.exit_to_top_long) :
+                                    AnimationsId.Create(Resource.Animation.enter_from_top_long, Resource.Animation.exit_to_bottom_long);
                 default:
                     if (animation.BounceEffect && isPush)
-                        return AnimationsId.Create(Resource.Animator.enter_from_left_long_bounce, Resource.Animator.exit_to_right_long_bounce);
-                    return isPush ? AnimationsId.Create(Resource.Animator.enter_from_left_long, Resource.Animator.exit_to_right_long) :
-                                    AnimationsId.Create(Resource.Animator.enter_from_right_long, Resource.Animator.exit_to_left_long);
+                        return AnimationsId.Create(Resource.Animation.enter_from_left_long_bounce, Resource.Animation.exit_to_right_long_bounce);
+                    return isPush ? AnimationsId.Create(Resource.Animation.enter_from_left_long, Resource.Animation.exit_to_right_long) :
+                                    AnimationsId.Create(Resource.Animation.enter_from_right_long, Resource.Animation.exit_to_left_long);
             }
         }
 
@@ -66,17 +66,17 @@ namespace FormsControls.Droid
             switch (animation.Subtype)
             {
                 case AnimationSubtype.FromRight:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_from_right_long_bounce : Resource.Animator.enter_from_right_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_to_right_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_from_right_long_bounce : Resource.Animation.enter_from_right_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_to_right_long);
                 case AnimationSubtype.FromTop:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_from_top_long_bounce : Resource.Animator.enter_from_top_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_to_top_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_from_top_long_bounce : Resource.Animation.enter_from_top_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_to_top_long);
                 case AnimationSubtype.FromBottom:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_from_bottom_long_bounce : Resource.Animator.enter_from_bottom_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_to_bottom_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_from_bottom_long_bounce : Resource.Animation.enter_from_bottom_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_to_bottom_long);
                 default:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_from_left_long_bounce : Resource.Animator.enter_from_left_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_to_left_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_from_left_long_bounce : Resource.Animation.enter_from_left_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_to_left_long);
             }
         }
 
@@ -85,20 +85,20 @@ namespace FormsControls.Droid
             switch (animation.Subtype)
             {
                 case AnimationSubtype.FromLeft:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_scale_from_left_long_bounce : Resource.Animator.enter_scale_from_left_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_scale_from_left_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_scale_from_left_long_bounce : Resource.Animation.enter_scale_from_left_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_scale_from_left_long);
                 case AnimationSubtype.FromRight:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_scale_from_right_long_bounce : Resource.Animator.enter_scale_from_right_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_scale_from_right_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_scale_from_right_long_bounce : Resource.Animation.enter_scale_from_right_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_scale_from_right_long);
                 case AnimationSubtype.FromTop:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_scale_from_top_long_bounce : Resource.Animator.enter_scale_from_top_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_scale_from_top_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_scale_from_top_long_bounce : Resource.Animation.enter_scale_from_top_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_scale_from_top_long);
                 case AnimationSubtype.FromBottom:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_scale_from_bottom_long_bounce : Resource.Animator.enter_scale_from_bottom_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_scale_from_bottom_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_scale_from_bottom_long_bounce : Resource.Animation.enter_scale_from_bottom_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_scale_from_bottom_long);
                 default:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_scale_long_bounce : Resource.Animator.enter_scale_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_scale_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_scale_long_bounce : Resource.Animation.enter_scale_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_scale_long);
             }
         }
 
@@ -107,20 +107,20 @@ namespace FormsControls.Droid
             switch (animation.Subtype)
             {
                 case AnimationSubtype.FromLeft:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_landing_from_left_long_bounce : Resource.Animator.enter_landing_from_left_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_landing_from_left_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_landing_from_left_long_bounce : Resource.Animation.enter_landing_from_left_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_landing_from_left_long);
                 case AnimationSubtype.FromRight:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_landing_from_right_long_bounce : Resource.Animator.enter_landing_from_right_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_landing_from_right_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_landing_from_right_long_bounce : Resource.Animation.enter_landing_from_right_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_landing_from_right_long);
                 case AnimationSubtype.FromTop:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_landing_from_top_long_bounce : Resource.Animator.enter_landing_from_top_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_landing_from_top_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_landing_from_top_long_bounce : Resource.Animation.enter_landing_from_top_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_landing_from_top_long);
                 case AnimationSubtype.FromBottom:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_landing_from_bottom_long_bounce : Resource.Animator.enter_landing_from_bottom_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_landing_from_bottom_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_landing_from_bottom_long_bounce : Resource.Animation.enter_landing_from_bottom_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_landing_from_bottom_long);
                 default:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_landing_long_bounce : Resource.Animator.enter_landing_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_landing_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_landing_long_bounce : Resource.Animation.enter_landing_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_landing_long);
             }
         }
 
@@ -129,17 +129,17 @@ namespace FormsControls.Droid
             switch (animation.Subtype)
             {
                 case AnimationSubtype.FromRight:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_roll_from_right_long_bounce : Resource.Animator.enter_roll_from_right_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_roll_to_right_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_roll_from_right_long_bounce : Resource.Animation.enter_roll_from_right_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_roll_to_right_long);
                 case AnimationSubtype.FromTop:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_roll_from_top_long_bounce : Resource.Animator.enter_roll_from_top_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_roll_to_top_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_roll_from_top_long_bounce : Resource.Animation.enter_roll_from_top_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_roll_to_top_long);
                 case AnimationSubtype.FromBottom:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_roll_from_bottom_long_bounce : Resource.Animator.enter_roll_from_bottom_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_roll_to_bottom_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_roll_from_bottom_long_bounce : Resource.Animation.enter_roll_from_bottom_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_roll_to_bottom_long);
                 default:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_roll_from_left_bounce : Resource.Animator.enter_roll_from_left_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_roll_to_left_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_roll_from_left_bounce : Resource.Animation.enter_roll_from_left_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_roll_to_left_long);
             }
         }
 
@@ -148,20 +148,20 @@ namespace FormsControls.Droid
             switch (animation.Subtype)
             {
                 case AnimationSubtype.FromRight:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_rotate_from_right_long_bounce : Resource.Animator.enter_rotate_from_right_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_rotate_to_right_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_rotate_from_right_long_bounce : Resource.Animation.enter_rotate_from_right_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_rotate_to_right_long);
                 case AnimationSubtype.FromTop:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_rotate_from_top_long_bounce : Resource.Animator.enter_rotate_from_top_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_rotate_to_top_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_rotate_from_top_long_bounce : Resource.Animation.enter_rotate_from_top_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_rotate_to_top_long);
                 case AnimationSubtype.FromBottom:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_rotate_from_bottom_long_bounce : Resource.Animator.enter_rotate_from_bottom_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_rotate_to_bottom_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_rotate_from_bottom_long_bounce : Resource.Animation.enter_rotate_from_bottom_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_rotate_to_bottom_long);
                 case AnimationSubtype.FromLeft:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_rotate_from_left_long_bounce : Resource.Animator.enter_rotate_from_left_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_rotate_to_left_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_rotate_from_left_long_bounce : Resource.Animation.enter_rotate_from_left_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_rotate_to_left_long);
                 default:
-                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animator.enter_rotate_long_bounce : Resource.Animator.enter_rotate_long, Resource.Animator.empty_Animation_long) :
-                                    AnimationsId.Create(Resource.Animator.empty_Animation_long, Resource.Animator.exit_rotate_long);
+                    return isPush ? AnimationsId.Create(animation.BounceEffect ? Resource.Animation.enter_rotate_long_bounce : Resource.Animation.enter_rotate_long,  Resource.Animation.empty_animation_long) :
+                                    AnimationsId.Create( Resource.Animation.empty_animation_long, Resource.Animation.exit_rotate_long);
             }
         }
     }

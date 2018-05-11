@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace FormsControls.Base
+namespace FormsControls
 {
     public partial class BrandBlock : Grid
     {
