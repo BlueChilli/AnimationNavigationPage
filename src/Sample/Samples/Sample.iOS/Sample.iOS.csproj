@@ -190,17 +190,13 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\..\FormsControls\FormsControls.csproj">
+      <Project>{09d93f55-4cd7-47b7-9f6d-4074240b07e2}</Project>
+      <Name>FormsControls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sample.Base\Sample.csproj">
       <Project>{D7DB030E-E539-4F9A-8AE9-0D167634E4BA}</Project>
       <Name>Sample</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Lib\FormsControls.Base\FormsControls.Base.csproj">
-      <Project>{453B182A-A11B-41B8-AB06-F90E5C0FD967}</Project>
-      <Name>FormsControls.Base</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Lib\FormsControls.Touch\FormsControls.Touch.csproj">
-      <Project>{B73A9C90-1DF1-49FA-9DCE-331DB24FA383}</Project>
-      <Name>FormsControls.Touch</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

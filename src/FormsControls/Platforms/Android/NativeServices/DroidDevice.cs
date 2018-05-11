@@ -9,7 +9,7 @@ namespace FormsControls.Droid
 {
     public class DroidDevice : IDeviceInfo
     {
-        private static Context Context => Android.App.Application.Context;
+        private static Context Context => Main.Context;
 
         public static DisplayMetrics Metrics => Context.Resources.DisplayMetrics;
 

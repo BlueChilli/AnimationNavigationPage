@@ -155,7 +155,12 @@
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FormsControls\FormsControls.csproj">
+      <Project>{09d93f55-4cd7-47b7-9f6d-4074240b07e2}</Project>
+      <Name>FormsControls</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
@@ -182,16 +187,6 @@
     <AndroidResource Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\..\Lib\FormsControls.Base\FormsControls.Base.csproj">
-      <Project>{453B182A-A11B-41B8-AB06-F90E5C0FD967}</Project>
-      <Name>FormsControls.Base</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Lib\FormsControls.Droid\FormsControls.Droid.csproj">
-      <Project>{2E135E3C-E516-45C5-91F2-F42B13EF0F5F}</Project>
-      <Name>FormsControls.Droid</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fontawesome-webfont.ttf" />
   </ItemGroup>
